@@ -1,0 +1,143 @@
+Test cases for which adversarial examples found: conv1 1st, fc2 2nd
+1. Basic Zonotope, no optimization
+Evaluating network fc1...
+not verified
+not verified
+Evaluating network fc2...
+not verified
+not verified
+Evaluating network fc3...
+verified
+verified
+Evaluating network fc4...
+not verified
+not verified
+Evaluating network fc5...
+not verified
+not verified
+Evaluating network conv1...
+not verified
+not verified
+Evaluating network conv2...
+verified
+not verified
+Evaluating network conv3...
+verified
+not verified
+Evaluating network conv4...
+verified
+not verified
+Evaluating network conv5...
+not verified
+not verified
+
+2. Pruning Zonotope
+Evaluating network fc1...
+verified
+not verified
+Evaluating network fc2...
+verified
+not verified
+Evaluating network fc3...
+verified
+verified
+Evaluating network fc4...
+not verified
+not verified
+Evaluating network fc5...
+not verified
+not verified
+Evaluating network conv1...
+not verified
+not verified
+Evaluating network conv2...
+verified
+not verified
+Evaluating network conv3...
+verified
+not verified
+Evaluating network conv4...
+verified
+not verified
+Evaluating network conv5...
+not verified
+not verified
+
+3. list of lambda
+Evaluating network fc1...
+verified
+not verified
+Evaluating network fc2...
+verified
+not verified
+Evaluating network fc3...
+verified
+verified
+Evaluating network fc4...
+verified
+verified
+Evaluating network fc5...
+not verified
+not verified
+Evaluating network conv1...
+not verified
+not verified
+Evaluating network conv2...
+verified
+verified
+Evaluating network conv4...
+verified
+not verified
+Evaluating network conv5...
+not verified
+not verified
+
+4. Learning lambda (loss: -lower[true_label])
+Evaluating network fc1...
+verified
+Solved
+verified
+Evaluating network fc2...
+verified
+not verified
+Evaluating network fc3...
+verified
+verified
+Evaluating network fc4...
+Solved
+verified
+Solved
+verified
+Evaluating network fc5...
+not verified
+Solved
+verified
+Evaluating network conv1...
+not verified
+Solved
+verified
+Evaluating network conv2...
+verified
+Solved
+verified
+Evaluating network conv3...
+verified
+not verified
+Evaluating network conv4...
+verified
+Solved
+verified
+Evaluating network conv5...
+Solved
+verified
+Solved
+verified
+
+
+conv3
+lr = 0.05, itr = 36
+scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.25, patience=2, verbose=True)
+      
+conv3
+lr = 0.05, itr = 158
+scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=3, verbose=True)
